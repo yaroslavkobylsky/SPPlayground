@@ -1,6 +1,5 @@
 package com.yarosla.resttest.demo.service.impl;
 
-import com.yarosla.resttest.demo.dao.FishDao;
 import com.yarosla.resttest.demo.model.Fish;
 import com.yarosla.resttest.demo.repository.FishRepository;
 import com.yarosla.resttest.demo.service.FishService;

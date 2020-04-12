@@ -1,7 +1,5 @@
 package com.yarosla.resttest.demo.model;
 
-import org.springframework.stereotype.Component;
-
 import javax.persistence.Entity;
 import javax.persistence.Id;
 
