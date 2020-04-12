@@ -4,15 +4,15 @@ import javax.persistence.*;
 import java.util.List;
 
 @Entity
-@Table(name="Users")
+@Table(name = "Users")
 public class User {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long Id;
-    private String userName;
+    private String name;
     private String password;
-    private boolean isLocked;
+    private boolean isEnabled;
 
     @ManyToMany
     private List<UserRole> userRoles;
@@ -33,12 +33,12 @@ public class User {
         Id = id;
     }
 
-    public String getUserName() {
-        return userName;
+    public String getName() {
+        return name;
     }
 
-    public void setUserName(String userName) {
-        this.userName = userName;
+    public void setName(String userName) {
+        this.name = userName;
     }
 
     public String getPassword() {
@@ -49,11 +49,11 @@ public class User {
         this.password = password;
     }
 
-    public boolean isLocked() {
-        return isLocked;
+    public boolean isEnabled() {
+        return isEnabled;
     }
 
-    public void setLocked(boolean locked) {
-        isLocked = locked;
+    public void setEnabled(boolean enabled) {
+        isEnabled = enabled;
     }
 }
